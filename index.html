@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Log into Roblox</title>
+<title>Login to Roblox</title>
 <style>
     /* --- Page & Layout --- */
     body {
@@ -11,11 +11,10 @@
         padding: 0;
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
         background-color: #0d0d0d;
-        background-image: 
-            radial-gradient(at 10% 20%, rgba(50,0,50,0.6) 0px, transparent 50%),
-            radial-gradient(at 90% 80%, rgba(0,50,50,0.6) 0px, transparent 50%),
-            url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg==');
+        background-image: url('roblox.jpg');
         background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -25,7 +24,7 @@
 
     /* --- Login Panel Container --- */
     .login-panel {
-        background-color: #27272c;
+        background-color: #27282e;
         width: 100%;
         max-width: 440px;
         padding: 36px 36px 32px 36px;
@@ -36,10 +35,10 @@
 
     /* --- Title --- */
     h1 {
-        font-size: 28px;
+        font-size: 38px;
         font-weight: 700;
         text-align: center;
-        margin: 0 0 28px 0;
+        margin: 0 0 14px 0;
         color: #ffffff;
     }
 
@@ -51,10 +50,10 @@
     input[type="text"],
     input[type="password"] {
         width: 100%;
-        padding: 14px 16px;
+        padding: 10px 16px;
         margin-bottom: 0px;
-        background-color: #38383f;
-        border: 1px solid #4a4a52;
+        background-color: #35363d;
+        border: 1px solid #45464f;
         border-radius: 8px;
         color: #ffffff;
         font-size: 15px;
@@ -80,10 +79,10 @@
     /* --- Primary Button --- */
     .login-btn {
         width: 100%;
-        padding: 14px 16px;
+        padding: 10px 16px;
         margin-top: 4px;
         margin-bottom: 24px;
-        background-color: #27272c;
+        background-color: #27282e;
         border: 1px solid rgba(255, 255, 255, 0.75);
         border-radius: 8px;
         color: rgba(255, 255, 255, 0.85);
@@ -95,7 +94,7 @@
     }
 
     .login-btn:hover {
-        background-color: #27272c;
+        background-color: #27282e;
         border-color: #ffffff;
         color: #ffffff;
     }
@@ -103,7 +102,7 @@
     /* --- "Forgot" Link --- */
     .forgot-link-container {
         text-align: center;
-        margin-bottom: 28px;
+        margin-bottom: 24px;
     }
 
     .forgot-link {
@@ -117,17 +116,20 @@
         text-decoration: underline;
     }
 
-    /* --- Divider / Spacing helper if needed --- */
-    .divider-space {
-        height: 12px;
+    /* --- Divider Line --- */
+    .divider {
+        height: 1px;
+        background-color: #45464f;
+        margin-bottom: 24px;
+        width: 100%;
     }
 
     /* --- Secondary Buttons --- */
     .secondary-btn {
         width: 100%;
-        padding: 14px 16px;
+        padding: 10px 16px;
         margin-bottom: 12px;
-        background-color: #38383f;
+        background-color: #35363d;
         border: none;
         border-radius: 8px;
         color: #e0e0e0;
@@ -139,7 +141,7 @@
     }
 
     .secondary-btn:hover {
-        background-color: #42424a;
+        background-color: #40414a;
     }
 
     /* --- Bottom Link --- */
@@ -181,6 +183,8 @@
         <div class="forgot-link-container">
             <a href="#" class="forgot-link">Forgot Password or Username?</a>
         </div>
+
+        <div class="divider"></div>
 
         <button class="secondary-btn">Email Me a One-Time Code</button>
         <button class="secondary-btn">Quick Sign-in</button>
