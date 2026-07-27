@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
 <style>
   body {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    /* Set the background image from the file you uploaded */
-    background-image: url('roblox.jpeg');
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-image: url('roblox.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -18,123 +18,111 @@
   }
 
   .login-container {
-    /* This is the semi-transparent dark background of the login box */
-    background-color: rgba(12, 14, 21, 0.9);
-    padding: 40px 36px;
-    border-radius: 12px;
+    background-color: #12151e;
+    padding: 38px 32px 32px 32px;
+    border-radius: 14px;
     width: 440px;
     box-sizing: border-box;
     text-align: center;
-    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.9);
   }
 
   h2 {
     margin-top: 0;
-    margin-bottom: 32px;
-    font-size: 32px;
+    margin-bottom: 28px;
+    font-size: 28px;
     font-weight: 700;
     color: #ffffff;
-    letter-spacing: -0.5px;
+    letter-spacing: -0.3px;
   }
 
   .input-field {
     width: 100%;
-    padding: 16px 18px;
-    margin-bottom: 14px;
-    background-color: #171922;
-    border: 1px solid #232631;
+    padding: 15px 16px;
+    margin-bottom: 12px;
+    background-color: #1a1e29;
+    border: 1px solid #272c3b;
     border-radius: 8px;
     color: #ffffff;
-    font-size: 16px;
+    font-size: 15px;
     box-sizing: border-box;
-  }
-
-  .input-field:focus {
     outline: none;
-    border-color: #4a4e5d;
   }
 
-  ::placeholder {
-    color: #8c8f9c;
+  .input-field::placeholder {
+    color: #7b7f8e;
     opacity: 1;
   }
 
-  .btn-primary {
+  .input-field:focus {
+    border-color: #4a5063;
+  }
+
+  .btn-login {
     width: 100%;
-    padding: 16px;
+    padding: 14px;
     margin-top: 2px;
     margin-bottom: 24px;
-    background-color: transparent;
+    background-color: #12151e;
     color: #ffffff;
-    border: 1px solid #363944;
+    border: 1px solid #323746;
     border-radius: 8px;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 15px;
     cursor: pointer;
   }
 
-  .btn-primary:hover {
-    background-color: rgba(255, 255, 255, 0.05);
+  .btn-login:hover {
+    background-color: #1a1e29;
   }
 
-  .link-text {
+  .link-forgot {
     display: block;
     color: #ffffff;
-    font-size: 15px;
+    font-size: 14px;
     text-decoration: none;
-    margin-bottom: 28px;
+    margin-bottom: 26px;
     font-weight: 400;
   }
 
-  .link-text:hover {
+  .link-forgot:hover {
     text-decoration: underline;
   }
 
   .divider {
     border: none;
-    border-top: 1px solid #232631;
-    margin-bottom: 28px;
+    border-top: 1px solid #232836;
+    margin-bottom: 26px;
   }
 
   .btn-secondary {
     width: 100%;
-    padding: 16px;
-    margin-bottom: 14px;
-    background-color: #171922;
+    padding: 14px;
+    margin-bottom: 12px;
+    background-color: #1a1e29;
     color: #ffffff;
-    border: 1px solid transparent;
+    border: 1px solid #1a1e29;
     border-radius: 8px;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 15px;
     cursor: pointer;
   }
 
   .btn-secondary:hover {
-    background-color: #20232e;
+    background-color: #232836;
   }
 
-  .create-account {
+  .link-create {
     display: block;
     color: #ffffff;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 600;
     text-decoration: none;
     margin-top: 28px;
   }
 
-  .create-account:hover {
+  .link-create:hover {
     text-decoration: underline;
-  }
-
-  /* Style for the "Chat" label at the bottom right */
-  .chat-label {
-    position: fixed;
-    bottom: 16px;
-    right: 16px;
-    color: #ffffff;
-    font-size: 14px;
-    opacity: 0.8;
-    pointer-events: none; /* So it doesn't block clicks */
   }
 </style>
 </head>
@@ -147,21 +135,18 @@
       <input type="text" class="input-field" placeholder="Username/Email/Phone">
       <input type="password" class="input-field" placeholder="Password">
       
-      <button type="submit" class="btn-primary">Log In</button>
+      <button type="submit" class="btn-login">Log In</button>
     </form>
 
-    <a href="#" class="link-text">Forgot Password or Username?</a>
+    <a href="#" class="link-forgot">Forgot Password or Username?</a>
 
     <hr class="divider">
 
     <button class="btn-secondary">Email Me a One-Time Code</button>
     <button class="btn-secondary">Quick Sign-in</button>
 
-    <a href="#" class="create-account">Create A New Account</a>
+    <a href="#" class="link-create">Create A New Account</a>
   </div>
-
-  <!-- The Chat label from the photo -->
-  <div class="chat-label">Chat</div>
 
 </body>
 </html>
