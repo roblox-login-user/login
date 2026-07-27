@@ -5,7 +5,8 @@
   body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    background-image: url('roblox.jpg');
+    /* Set the background image from the file you uploaded */
+    background-image: url('roblox.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -17,7 +18,8 @@
   }
 
   .login-container {
-    background-color: #0b0d14;
+    /* This is the semi-transparent dark background of the login box */
+    background-color: rgba(12, 14, 21, 0.9);
     padding: 40px 36px;
     border-radius: 12px;
     width: 440px;
@@ -123,6 +125,17 @@
   .create-account:hover {
     text-decoration: underline;
   }
+
+  /* Style for the "Chat" label at the bottom right */
+  .chat-label {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    color: #ffffff;
+    font-size: 14px;
+    opacity: 0.8;
+    pointer-events: none; /* So it doesn't block clicks */
+  }
 </style>
 </head>
 <body>
@@ -146,6 +159,9 @@
 
     <a href="#" class="create-account">Create A New Account</a>
   </div>
+
+  <!-- The Chat label from the photo -->
+  <div class="chat-label">Chat</div>
 
 </body>
 </html>
